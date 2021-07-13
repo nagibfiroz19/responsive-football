@@ -7,19 +7,19 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-header .container{
-    display: flex;
-
-}
 .container{
+    display: flex;
     width:1440px;
     height:677px;
     background-color:#2D25A0;
     align-items: center;
 }
+.banner-title{
+    margin-left: 120px;
+}
 .title-design {
     color: #FFFFFF;
-    font-size: 65px;
+    font-size: 80px;
     font-weight: 700;
 }
 button{
@@ -36,6 +36,10 @@ button a{
 }
 span{
     color: #FFFFFF;
+}
+.banner-img{
+    margin-right: 102px;
+
 }
 .banner-img img{
     width: 556px;
