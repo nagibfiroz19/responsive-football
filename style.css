@@ -5,60 +5,74 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: white;
 }
 
-.banner{
-    display: flex;
-    width:1440px;
-    height:677px;
-    background-color:#2D25A0;
-    /* background-color: white; */
-    align-items: center;
+/* Start */
+
+.banner-container{
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
 }
-.banner-title{
-    margin-left: 142px;
+.banner-left{
+    width: 75%;
+    padding-left: 116px;
+    padding-top: 207px;
 }
-.banner-title-design {
-    color: #FFFFFF;
-    font-size: 64px;
+.banner-left h1{
+    color: white;
     font-weight: 700;
-    width: 490px;
+    font-size: 64px;
+    line-height: 80px;
+    margin: 0px;
+    padding-bottom: 27px;
 }
-button{
-    background-color: #E02C6D;
+.banner-left a{
     width: 168px;
     height: 44px;
-    transition: all 0.5s ease;
-    
-}
-button:hover{
-    background-color: #c159cf;
-    height: 80px;
-}
-button a{
+    padding: 10px 24px 10px 24px;
+    background-color: #E02C6D;
+    color: white;
     text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 500;
     font-size: 16px;
-    margin-right: 8px;
+    font-weight: 500;
 }
-span{
-    color: #FFFFFF;
+.banner-left i{
+    padding-left: 10px;
 }
-.banner-img{
-    margin-left: 150px;
+.banner-rigt{
+    width: 50%;
+    padding: 153px 120px 86px 40px;
 }
-.banner-img img{
+.banner-right img{
     width: 556px;
     height: 438px;
-    transition: all 0.7s ease;
 }
-.banner-img:hover img{
-    width: 656px;
-    height: 538px;
-}
+@keyframes img-animation {
+    50% {
+      transform:scale(0.9);
+    }
+    100% {
+      transform:scale(1.0);
+    }
+  }
+  .img-animation:hover {
+      animation-name: img-animation;
+      animation-duration: 0.9s;
+      animation-timing-function: ease-out;
+      animation-iteration-count:infinite;
+      animation-direction:reverse;
+    }
+
+
+
+    /* End */
+
 /* start */
-.container{
+.blog-container{
     padding-top: 70px;
 }
 .players{
